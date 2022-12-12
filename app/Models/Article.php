@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    public function tags()
+    {
+        return $this->belongsToMany('App￥Tag');
+    }
     use HasFactory;
 }
